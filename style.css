@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: sofia-pro;
+  src: url("./fonts/Sofia\ Pro\ Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: sofia-pro;
+  font-weight: 300;
+  src: url("./fonts/Sofia\ Pro\ Light.otf") format("opentype");
+}
+
+html {
+  font-family: sofia-pro;
+  color: #2b1e6b;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.wrapper {
+  width: 600px;
+  height: 200px;
+  background-color: #f5f4f9;
+  border-radius: 20px;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button {
+  padding: 10px 24px 6px 24px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  background-color: #4b22dd;
+  font-family: sofia-pro;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.button:hover {
+  background-color: #7151e4;
+}
