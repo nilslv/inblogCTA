@@ -6,12 +6,12 @@
 
 @font-face {
   font-family: sofia-pro;
-  src: url("./fonts/Sofia\ Pro\ Regular.otf") format("opentype");
+  src: url("./fonts/Sofia\ Pro\ Medium.otf") format("opentype");
 }
 @font-face {
   font-family: sofia-pro;
-  font-weight: bold;
-  src: url("./fonts/Sofia\ Pro\ Bold.otf") format("opentype");
+  font-weight: 300;
+  src: url("./fonts/Sofia\ Pro\ Light.otf") format("opentype");
 }
 
 html {
@@ -19,40 +19,41 @@ html {
   color: #2b1e6b;
 }
 
-h1 {
-  font-weight: bold;
-  font-size: 66px;
-  line-height: 1;
+h2 {
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
 }
 
 .wrapper {
-  width: 1592px;
-  height: 712px;
+  width: 100%;
+  max-width: 672px;
+  height: 220px;
   background-color: #f5f4f9;
   border-radius: 20px;
-
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
-}
-
-.content {
-  padding: 0 48px 0 64px;
+  padding: 40px;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
 }
 
-p {
-  margin: 48px 0;
-  padding-right: 96px;
-  font-size: 24px;
-  line-height: 32px;
-}
-
-a {
-  font-size: 27px;
-  color: #4b22dd;
+.button {
+  padding: 10px 24px 6px 24px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  background-color: #4b22dd;
+  font-family: sofia-pro;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
   text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.button:hover {
+  background-color: #7151e4;
 }
